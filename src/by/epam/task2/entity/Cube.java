@@ -37,7 +37,7 @@ public class Cube implements Cloneable{
         }
 
         this.firstPoint = firstPoint;
-        //notifyObserver();
+
     }
 
 
