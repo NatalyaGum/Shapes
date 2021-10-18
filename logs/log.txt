@@ -1,44 +1,42 @@
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0; 0.0; 0.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.1; 1.1; 1.1}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 1.0; 10.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 1.0; -1.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0; 3.0; 4.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0; 3.0; 0.1}
-2021-10-14 21:33:04 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 1d, 12.1
-2021-10-14 21:33:04 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: abc
-2021-10-14 21:33:04 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: a, b
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 9.0; 12.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 9.0; 3.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0; 87.0; 19.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0; 87.0; 10.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0; 0.0; 0.0}
-2021-10-14 21:33:04 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 0.0; 0.0}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 6fe7419e-9bd8-441d-8e02-6965e21130c8, first point: Point{0.0; 0.0; 0.0}, second point: Point{1.1; 1.1; 1.1}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 1cda86aa-d815-4cd5-af6c-ac530262ca48, first point: Point{1.0; 1.0; 10.0}, second point: Point{1.0; 1.0; -1.0}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = e13fb06c-b39c-4aa9-a3dd-a536a8da4ae3, first point: Point{2.0; 3.0; 4.0}, second point: Point{2.0; 3.0; 0.1}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = e092d539-d197-4447-a218-0c54d91935b3, first point: Point{1.0; 9.0; 12.0}, second point: Point{1.0; 9.0; 3.0}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 307ea774-2c08-4a34-bfe5-97ed71dad957, first point: Point{10.0; 87.0; 19.0}, second point: Point{10.0; 87.0; 10.0}
-2021-10-14 21:33:04 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 010bc1be-bb10-402c-8e5d-7cdc3f6da8c0, first point: Point{0.0; 0.0; 0.0}, second point: Point{1.0; 0.0; 0.0}
-2021-10-14 21:33:04 [main] [main] [34] INFO  by.epam.task2.main.main - 173.20508075688772; e100.0;  v 1000000.0
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0; 0.0; 0.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.1; 1.1; 1.1}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 1.0; 10.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 1.0; -1.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0; 3.0; 4.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0; 3.0; 0.1}
-2021-10-14 21:33:34 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 1d, 12.1
-2021-10-14 21:33:34 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: abc
-2021-10-14 21:33:34 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: a, b
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 9.0; 12.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 9.0; 3.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0; 87.0; 19.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0; 87.0; 10.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0; 0.0; 0.0}
-2021-10-14 21:33:34 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0; 0.0; 0.0}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = b8e2ae6b-7544-4227-84f8-5190d8438c50, first point: Point{0.0; 0.0; 0.0}, second point: Point{1.1; 1.1; 1.1}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = abbd5302-f657-4251-bac7-949d3a8940ee, first point: Point{1.0; 1.0; 10.0}, second point: Point{1.0; 1.0; -1.0}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 11ffe0d7-ffec-4e3c-b96e-2ba5cb79e5fc, first point: Point{2.0; 3.0; 4.0}, second point: Point{2.0; 3.0; 0.1}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = b4808f17-8006-423c-82b5-6c58b627c5a7, first point: Point{1.0; 9.0; 12.0}, second point: Point{1.0; 9.0; 3.0}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 05b137ce-1049-411c-a82f-8265cdc273b7, first point: Point{10.0; 87.0; 19.0}, second point: Point{10.0; 87.0; 10.0}
-2021-10-14 21:33:34 [main] [createCube] [31] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 09e9c942-44eb-429a-9d3e-e82ab26f5b70, first point: Point{0.0; 0.0; 0.0}, second point: Point{1.0; 0.0; 0.0}
-2021-10-14 21:33:34 [main] [main] [34] INFO  by.epam.task2.main.main - d 173.20508075688772; e 100.0;  v 1000000.0
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.1, 1.1, 1.1}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0, 1.0, 10.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0, 1.0, -1.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0, 3.0, 4.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{2.0, 3.0, 0.1}
+2021-10-18 19:32:08 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 1d, 12.1
+2021-10-18 19:32:08 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: abc
+2021-10-18 19:32:08 [main] [parsePoints] [35] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: a, b
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0, 9.0, 12.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0, 87.0, 19.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{10.0, 87.0, 10.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{0.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [createPoint] [19] INFO  epam.task2.factory.impl.PointFactoryImpl - Point createdPoint{1.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 74b7dbdb-67de-4264-8af0-d5a77942843f, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.1, 1.1, 1.1}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 74b7dbdb-67de-4264-8af0-d5a77942843f, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.1, 1.1, 1.1}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 74b7dbdb-67de-4264-8af0-d5a77942843f, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.1, 1.1, 1.1}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 334b38ae-3589-4356-a234-3040815385af, first point: Point{1.0, 1.0, 10.0}, second point: Point{1.0, 1.0, -1.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 334b38ae-3589-4356-a234-3040815385af, first point: Point{1.0, 1.0, 10.0}, second point: Point{1.0, 1.0, -1.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 334b38ae-3589-4356-a234-3040815385af, first point: Point{1.0, 1.0, 10.0}, second point: Point{1.0, 1.0, -1.0}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = d37b8fbe-269e-45ba-81a6-104c17377329, first point: Point{2.0, 3.0, 4.0}, second point: Point{2.0, 3.0, 0.1}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = d37b8fbe-269e-45ba-81a6-104c17377329, first point: Point{2.0, 3.0, 4.0}, second point: Point{2.0, 3.0, 0.1}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = d37b8fbe-269e-45ba-81a6-104c17377329, first point: Point{2.0, 3.0, 4.0}, second point: Point{2.0, 3.0, 0.1}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{1.0, 9.0, 12.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{1.0, 9.0, 12.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{1.0, 9.0, 12.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 0cf766eb-5703-4a46-b518-afd9a5e5eb93, first point: Point{10.0, 87.0, 19.0}, second point: Point{10.0, 87.0, 10.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 0cf766eb-5703-4a46-b518-afd9a5e5eb93, first point: Point{10.0, 87.0, 19.0}, second point: Point{10.0, 87.0, 10.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 0cf766eb-5703-4a46-b518-afd9a5e5eb93, first point: Point{10.0, 87.0, 19.0}, second point: Point{10.0, 87.0, 10.0}
+2021-10-18 19:32:08 [main] [createCube] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 8bde2e75-1517-4b73-a15b-1d12d0218b45, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 8bde2e75-1517-4b73-a15b-1d12d0218b45, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 8bde2e75-1517-4b73-a15b-1d12d0218b45, first point: Point{0.0, 0.0, 0.0}, second point: Point{1.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 73f73568-ec21-4b7c-b606-732c13adf179, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [parameterChanged] [25] INFO  epam.task2.observer.impl.CubeObserverImpl - Warehouse was updatedcubeId = 73f73568-ec21-4b7c-b606-732c13adf179, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 73f73568-ec21-4b7c-b606-732c13adf179, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-18 19:32:08 [main] [main] [50] INFO  by.epam.task2.main.main - d 173.20508075688772; e 100.0;  v 1000000.0
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{50.0, 50.0, 50.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [parameterChanged] [25] INFO  epam.task2.observer.impl.CubeObserverImpl - Warehouse was updatedcubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{50.0, 50.0, 50.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [fillWarehouse] [37] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{50.0, 50.0, 50.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [parameterChanged] [25] INFO  epam.task2.observer.impl.CubeObserverImpl - Warehouse was updatedcubeId = 1597f3cf-625a-4889-a121-64d6ccd0d9a2, first point: Point{50.0, 50.0, 50.0}, second point: Point{1.0, 9.0, 3.0}
+2021-10-18 19:32:08 [main] [main] [55] INFO  by.epam.task2.main.main - CubeRepository []

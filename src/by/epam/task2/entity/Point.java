@@ -64,8 +64,8 @@ public class Point implements Cloneable{
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Point{");
-        builder.append(x).append("; ");
-        builder.append(y).append("; ");
+        builder.append(x).append(", ");
+        builder.append(y).append(", ");
         builder.append(z).append("}");
         return builder.toString();
 
