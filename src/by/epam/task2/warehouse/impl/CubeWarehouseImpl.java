@@ -14,17 +14,19 @@ public class CubeWarehouseImpl {
     static Logger logger = LogManager.getLogger();
 
     private static final CubeWarehouseImpl instanceWarehouse = new CubeWarehouseImpl();
-    private  final Map<String , CubeParameter> cubeParameterMap  = new HashMap<>();
+    private final Map<String, CubeParameter> cubeParameterMap = new HashMap<>();
 
-    public static CubeWarehouseImpl getInstanceWarehouse(){
+    public static CubeWarehouseImpl getInstanceWarehouse() {
         return instanceWarehouse;
     }
-    public void putParameters(String id, double perimeter, double area, double volume,double diagonal) {
-        CubeParameter newCubeParameter = new CubeParameter( perimeter, area, volume, diagonal);
+
+    public void putParameters(String id, double perimeter, double area, double volume, double diagonal) {
+        CubeParameter newCubeParameter = new CubeParameter(perimeter, area, volume, diagonal);
         instanceWarehouse.cubeParameterMap.put(id, newCubeParameter);
     }
+
     public void putParameters(String id, CubeParameter newCubeParameter) {
-           instanceWarehouse.cubeParameterMap.put(id, newCubeParameter);
+        instanceWarehouse.cubeParameterMap.put(id, newCubeParameter);
     }
 
     public CubeParameter getParameter(String id) throws ShapeException {
@@ -47,8 +49,9 @@ public class CubeWarehouseImpl {
         cubeParameter.setVolume(newVolume);
         cubeParameter.setDiagonal(newDiagonal);
     }
+
     public void updateParameter(Cube cube) throws ShapeException {
-        WarehouseFiller filler= new WarehouseFiller();
+        WarehouseFiller filler = new WarehouseFiller();
         filler.fillWarehouse(cube);
     }
 }

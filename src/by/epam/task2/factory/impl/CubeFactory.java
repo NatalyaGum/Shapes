@@ -3,9 +3,9 @@ package by.epam.task2.factory.impl;
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
 import by.epam.task2.exception.ShapeException;
-import by.epam.task2.filler.RepositoryFiller;
 import by.epam.task2.filler.WarehouseFiller;
 import by.epam.task2.observer.impl.CubeObserverImpl;
+import by.epam.task2.repository.impl.CubeRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,7 +20,8 @@ public class CubeFactory {
         List<Cube> cubes = new ArrayList<Cube>();
         WarehouseFiller warehouseFiller = new WarehouseFiller();
         CubeObserverImpl observer = new CubeObserverImpl();
-        RepositoryFiller repositoryFiller = new RepositoryFiller();
+      //  RepositoryFiller repositoryFiller = new RepositoryFiller();
+        CubeRepository repository = CubeRepository.getRepositoryInstance();
         Point firstPoint;
         Point secondPoint;
         for (int i = 0; i < points.size(); i += 2) {
@@ -30,7 +31,7 @@ public class CubeFactory {
             cubes.add(cube);
             cube.attach(observer);
             warehouseFiller.fillWarehouse(cube);
-            repositoryFiller.fillRepository(cube);
+            repository.add(cube);
         }
         return cubes;
     }
@@ -38,12 +39,12 @@ public class CubeFactory {
     public static Cube createCube(Point firstPoint, Point secondPoint) throws ShapeException {
         WarehouseFiller warehouseFiller = new WarehouseFiller();
         CubeObserverImpl observer = new CubeObserverImpl();
-        RepositoryFiller repositoryFiller = new RepositoryFiller();
+        CubeRepository repository = CubeRepository.getRepositoryInstance();
         Cube cube = new Cube(firstPoint, secondPoint);
         logger.info("Cube created" + cube);
         cube.attach(observer);
         warehouseFiller.fillWarehouse(cube);
-        repositoryFiller.fillRepository(cube);
+        repository.add(cube);
         return cube;
     }
 

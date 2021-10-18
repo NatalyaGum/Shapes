@@ -83,4 +83,20 @@ public class CubeService {
         Point center = findCenterPoint(cube.getFirstPoint(), cube.getSecondPoint());
         return center;
     }
+
+    public boolean isCubeOnTheAxis(Cube cube) {
+
+        PointService service = new PointService();
+        Point centerPoint = service.findCenterPoint(cube);
+        double halfEdge = findCubeEdge(cube) / 2;
+        double x = centerPoint.getX();
+        double y = centerPoint.getY();
+        double z = centerPoint.getZ();
+        if (x - halfEdge == 0 || y - halfEdge == 0 || z - halfEdge == 0 ||
+                x + halfEdge == 0 || y + halfEdge == 0 || z + halfEdge == 0) {
+            return true;
+        }
+        return false;
+    }
+
 }

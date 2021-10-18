@@ -11,21 +11,24 @@ import java.util.stream.Collectors;
 
 public class CubeRepository implements Repository {
 
-    private static final CubeRepository instance = new CubeRepository();
+    private static final CubeRepository instanceRepository = new CubeRepository();
     private final List<Cube> cubes;
 
-    public CubeRepository() {
+    private CubeRepository() {
         cubes = new ArrayList<>();
     }
 
     public static CubeRepository getRepositoryInstance() {
-        return instance;
+        return instanceRepository;
     }
-
 
     @Override
     public boolean add(Cube cube) {
-        return cubes.add(cube);
+        boolean added = false;
+        if (!cubes.contains(cube)) {
+            added = cubes.add(cube);
+        }
+        return added;
     }
 
     @Override
@@ -35,18 +38,21 @@ public class CubeRepository implements Repository {
 
     @Override
     public boolean addAll(List<Cube> listOfCube) {
-        return cubes.addAll(listOfCube);
+        boolean added = false;
+        if (!cubes.containsAll(listOfCube)) {
+            added = cubes.addAll(listOfCube);
+        }
+        return added;
     }
 
     @Override
     public boolean removeAll(List<Cube> listOfCube) {
-        return cubes.addAll(listOfCube);
+        return cubes.removeAll(listOfCube);
     }
 
     @Override
     public void clear() {
         cubes.clear();
-
     }
 
     @Override
@@ -76,7 +82,7 @@ public class CubeRepository implements Repository {
 
     @Override
     public String toString() {
-        return "CubeRepository "+cubes;
+        return "CubeRepository size - " + cubes.size() + " ," + cubes;
 
     }
 }

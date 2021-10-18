@@ -1,7 +1,6 @@
 package by.epam.task2.main;
 
 import by.epam.task2.entity.Cube;
-import by.epam.task2.entity.CubeParameter;
 import by.epam.task2.entity.Point;
 import by.epam.task2.filler.WarehouseFiller;
 import by.epam.task2.observer.impl.CubeObserverImpl;
@@ -11,13 +10,11 @@ import by.epam.task2.exception.ShapeException;
 import by.epam.task2.factory.impl.CubeFactory;
 import by.epam.task2.parser.impl.ParserImpl;
 import by.epam.task2.reader.impl.CustomReaderImpl;
-import by.epam.task2.warehouse.impl.CubeWarehouseImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class main {
     static Logger logger = LogManager.getLogger();
@@ -31,7 +28,8 @@ public class main {
        // CubeWarehouseImpl warehouse=CubeWarehouseImpl.getInstanceWarehouse();
         WarehouseFiller filler= new WarehouseFiller();
         CubeObserverImpl observer= new CubeObserverImpl();
-        CubeRepository repository = new CubeRepository();
+
+        CubeRepository repository = CubeRepository.getRepositoryInstance();
         try {
             List<String> listOfPoints = reader.readFile("resources/points.txt");
             ArrayList<Point> points= parser.parsePoints(listOfPoints);
@@ -51,7 +49,7 @@ public class main {
             //filler.fillWarehouse(cubes);
             cubes.get(3).setFirstPoint(thirdPoint);
           //  logger.info(warehouse.getParameter(cubes.get(2).getCubeId()));
-            //repository.addAll(cubes);
+
             logger.info(repository);
 
           // for(Map.Entry<String, CubeParameter>pair:CubeWarehouseImpl.cubeParameterMap.entrySet());
