@@ -6,7 +6,7 @@ import by.epam.task2.service.CubeService;
 
 public class CubeDiagonalSpecification implements Specification {
 
-    private final double diagonal ;
+    private final double diagonal;
 
     public CubeDiagonalSpecification(double diagonal) {
         this.diagonal = diagonal;

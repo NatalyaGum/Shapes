@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+
 
 public class Cube implements Cloneable, Observable {
     private static final Logger logger = LogManager.getLogger();
@@ -22,7 +22,7 @@ public class Cube implements Cloneable, Observable {
     // two points of a cube diagonal
 
     public Cube(Point firstPoint, Point secondPoint) throws ShapeException {
-        if (firstPoint == null || secondPoint == null|| firstPoint.equals(secondPoint)) {
+        if (firstPoint == null || secondPoint == null || firstPoint.equals(secondPoint)) {
             logger.error("Attempt to create cube with null/same arguments");
             throw new ShapeException("Attempt to create cube with null/same arguments");
         }

@@ -3,9 +3,7 @@ package by.epam.task2.entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Objects;
-
-public class Point implements Cloneable{
+public class Point implements Cloneable {
     static Logger logger = LogManager.getLogger();
 
     private double x;
@@ -44,15 +42,19 @@ public class Point implements Cloneable{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {return true;}
-        if (o == null || getClass() != o.getClass()){ return false;}
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Point point = (Point) o;
         return x == point.x && y == point.y && z == point.z;
     }
 
     @Override
     public int hashCode() {
-        int hash=111;
+        int hash = 111;
         Double x = this.x;
         Double y = this.y;
         Double z = this.z;
@@ -70,6 +72,7 @@ public class Point implements Cloneable{
         return builder.toString();
 
     }
+
     @Override
     public Point clone() {
         Point point = null;

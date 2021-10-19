@@ -21,24 +21,24 @@ public class ParserImpl implements Parser {
         PointFactoryImpl pointFactory = new PointFactoryImpl();
 
         if (!linesFromFile.isEmpty()) {
-        for (String line : linesFromFile) {
-            if (validator.validatePoints(line)) {
-                String[] pointsLine = line.split(REGEX_FOR_SPLIT);
-                for (int i = 0; i < pointsLine.length; i += 3) {
-                    double x = Double.parseDouble(pointsLine[i]);
-                    double y = Double.parseDouble(pointsLine[i + 1]);
-                    double z = Double.parseDouble(pointsLine[i + 2]);
-                    Point point = pointFactory.createPoint(x, y, z);
-                    points.add(point);
+            for (String line : linesFromFile) {
+                if (validator.validatePoints(line)) {
+                    String[] pointsLine = line.split(REGEX_FOR_SPLIT);
+                    for (int i = 0; i < pointsLine.length; i += 3) {
+                        double x = Double.parseDouble(pointsLine[i]);
+                        double y = Double.parseDouble(pointsLine[i + 1]);
+                        double z = Double.parseDouble(pointsLine[i + 2]);
+                        Point point = pointFactory.createPoint(x, y, z);
+                        points.add(point);
+                    }
+                } else {
+                    logger.info("Validaion was failed for: " + line);
                 }
-            }else {
-                logger.info("Validaion was failed for: " + line);
             }
-
-
-        }}
-
-        return points;}}
+        }
+        return points;
+    }
+}
 
 
 

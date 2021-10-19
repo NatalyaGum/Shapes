@@ -15,27 +15,28 @@ public class WarehouseFiller {
     public void fillWarehouse(List<Cube> cubes) throws ShapeException {
         CubeService service = new CubeService();
         CubeWarehouseImpl warehouse = CubeWarehouseImpl.getInstanceWarehouse();
-        for ( Cube cube:cubes){
-            double diagonal=service.findCubeDiagonal(cube);
-            double perimeter=service.findCubePerimeter(cube);
-            double volume=service.findCubeVolume(cube);
-            double area=service.findCubeArea(cube);
-            warehouse.putParameters(cube.getCubeId(), perimeter,area,volume,diagonal);
+        for (Cube cube : cubes) {
+            double diagonal = service.findCubeDiagonal(cube);
+            double perimeter = service.findCubePerimeter(cube);
+            double volume = service.findCubeVolume(cube);
+            double area = service.findCubeArea(cube);
+            warehouse.putParameters(cube.getCubeId(), perimeter, area, volume, diagonal);
 
-        }logger.info("Warehouse filled successfully");
-    }
-
-
-        public void fillWarehouse(Cube cube) {
-            CubeService service = new CubeService();
-            CubeWarehouseImpl warehouse = CubeWarehouseImpl.getInstanceWarehouse();
-                double diagonal=service.findCubeDiagonal(cube);
-                double perimeter=service.findCubePerimeter(cube);
-                double volume=service.findCubeVolume(cube);
-                double area=service.findCubeArea(cube);
-                warehouse.putParameters(cube.getCubeId(), perimeter,area,volume,diagonal);
-                logger.info("Warehouse filled successfully. "+cube);
         }
-
+        logger.info("Warehouse filled successfully");
     }
+
+
+    public void fillWarehouse(Cube cube) {
+        CubeService service = new CubeService();
+        CubeWarehouseImpl warehouse = CubeWarehouseImpl.getInstanceWarehouse();
+        double diagonal = service.findCubeDiagonal(cube);
+        double perimeter = service.findCubePerimeter(cube);
+        double volume = service.findCubeVolume(cube);
+        double area = service.findCubeArea(cube);
+        warehouse.putParameters(cube.getCubeId(), perimeter, area, volume, diagonal);
+        logger.info("Warehouse filled successfully. " + cube);
+    }
+
+}
 

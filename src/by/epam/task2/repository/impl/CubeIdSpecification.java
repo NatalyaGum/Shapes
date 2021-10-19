@@ -2,7 +2,6 @@ package by.epam.task2.repository.impl;
 
 import by.epam.task2.entity.Cube;
 import by.epam.task2.repository.Specification;
-import by.epam.task2.service.CubeService;
 
 public class CubeIdSpecification implements Specification {
 

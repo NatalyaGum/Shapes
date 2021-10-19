@@ -2,6 +2,7 @@ package by.epam.task2.service;
 
 import by.epam.task2.entity.Point;
 import by.epam.task2.entity.Cube;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,9 +26,9 @@ public class PointService {
 
     public List<Point> findVertexCube(Cube cube) {
         List<Point> vertexPoints = new ArrayList<>();
-        CubeService service= new CubeService();
+        CubeService service = new CubeService();
         double halfEdge = service.findCubeEdge(cube) / 2;
-        Point centerPoint=findCenterPoint(cube);
+        Point centerPoint = findCenterPoint(cube);
 
         // 4 points below of center point
         double zLow = centerPoint.getZ() - halfEdge;

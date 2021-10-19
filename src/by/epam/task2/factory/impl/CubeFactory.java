@@ -3,6 +3,7 @@ package by.epam.task2.factory.impl;
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
 import by.epam.task2.exception.ShapeException;
+import by.epam.task2.factory.ShapeFactory;
 import by.epam.task2.filler.WarehouseFiller;
 import by.epam.task2.observer.impl.CubeObserverImpl;
 import by.epam.task2.repository.impl.CubeRepository;
@@ -13,14 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CubeFactory {
+public class CubeFactory implements ShapeFactory {
     private static Logger logger = LogManager.getLogger();
 
-    public static List<Cube> createCubeListFromPoints(List<Point> points) throws ShapeException {
+    public List<Cube> createCubeListFromPoints(List<Point> points) throws ShapeException {
         List<Cube> cubes = new ArrayList<Cube>();
         WarehouseFiller warehouseFiller = new WarehouseFiller();
         CubeObserverImpl observer = new CubeObserverImpl();
-      //  RepositoryFiller repositoryFiller = new RepositoryFiller();
         CubeRepository repository = CubeRepository.getRepositoryInstance();
         Point firstPoint;
         Point secondPoint;
@@ -36,7 +36,7 @@ public class CubeFactory {
         return cubes;
     }
 
-    public static Cube createCube(Point firstPoint, Point secondPoint) throws ShapeException {
+    public Cube createCube(Point firstPoint, Point secondPoint) throws ShapeException {
         WarehouseFiller warehouseFiller = new WarehouseFiller();
         CubeObserverImpl observer = new CubeObserverImpl();
         CubeRepository repository = CubeRepository.getRepositoryInstance();

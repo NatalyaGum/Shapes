@@ -12,11 +12,11 @@ public class CubeParameter implements Cloneable {
     private double volume;
     private double diagonal;
 
-    public CubeParameter(double perimeter,double area,double volume,double diagonal) {
+    public CubeParameter(double perimeter, double area, double volume, double diagonal) {
         this.volume = volume;
         this.area = area;
         this.perimeter = perimeter;
-        this.diagonal=diagonal;
+        this.diagonal = diagonal;
     }
 
 
@@ -89,5 +89,5 @@ public class CubeParameter implements Cloneable {
         stringBuilder.append(", volume= ").append(volume);
         stringBuilder.append(", diagonal= ").append(diagonal);
         return stringBuilder.toString();
-                 }
+    }
 }
