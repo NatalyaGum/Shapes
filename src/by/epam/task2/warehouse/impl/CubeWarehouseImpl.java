@@ -12,7 +12,6 @@ import java.util.Map;
 
 public class CubeWarehouseImpl {
     static Logger logger = LogManager.getLogger();
-
     private static final CubeWarehouseImpl instanceWarehouse = new CubeWarehouseImpl();
     private final Map<String, CubeParameter> cubeParameterMap = new HashMap<>();
 

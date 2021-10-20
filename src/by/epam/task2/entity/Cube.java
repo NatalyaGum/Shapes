@@ -4,7 +4,7 @@ import by.epam.task2.exception.ShapeException;
 import by.epam.task2.observer.Observer;
 import by.epam.task2.observer.Observable;
 import by.epam.task2.observer.CubeEvent;
-import by.epam.task2.util.CubeIdGenerator;
+import by.epam.task2.util.IdGenerator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,12 +21,8 @@ public class Cube implements Cloneable, Observable {
     private List<Observer> observers = new ArrayList<>();
     // two points of a cube diagonal
 
-    public Cube(Point firstPoint, Point secondPoint) throws ShapeException {
-        if (firstPoint == null || secondPoint == null || firstPoint.equals(secondPoint)) {
-            logger.error("Attempt to create cube with null/same arguments");
-            throw new ShapeException("Attempt to create cube with null/same arguments");
-        }
-        this.cubeId = CubeIdGenerator.generateId();
+    public Cube(Point firstPoint, Point secondPoint) {
+        this.cubeId = IdGenerator.generateId();
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
 
@@ -108,11 +104,11 @@ public class Cube implements Cloneable, Observable {
 
     @Override
     public void notifyObservers() {
-        if (!observers.isEmpty()) {
             CubeEvent cubeEvent = new CubeEvent(this);
             for (Observer observer : observers) {
                 observer.parameterChanged(cubeEvent);
-            }
+
         }
+
     }
 }

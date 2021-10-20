@@ -2,12 +2,14 @@ package by.epam.task2.comparator;
 
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
-import by.epam.task2.service.CubeService;
+import by.epam.task2.service.impl.CubeServiceImpl;
 
+import java.util.Comparator;
 
-public class CubeCenterComparator {         //the center of the cube relative to the center of coordinates
+//the center of the cube relative to the center of coordinates
+public class CubeCenterFromOriginComparator implements Comparator<Cube> {
     public int compare(Cube cube1, Cube cube2) {
-        CubeService service = new CubeService();
+        CubeServiceImpl service = new CubeServiceImpl();
         Point center1 = service.findCenterPoint(cube1);
         Point center2 = service.findCenterPoint(cube2);
         double x1 = center1.getX();

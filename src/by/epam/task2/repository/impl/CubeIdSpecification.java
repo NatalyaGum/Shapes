@@ -13,6 +13,7 @@ public class CubeIdSpecification implements Specification {
 
     @Override
     public boolean specify(Cube cube) {
-        return cube.getCubeId() == cubeId;
+
+        return 0==cube.getCubeId().compareTo(cubeId) ;
     }
 }

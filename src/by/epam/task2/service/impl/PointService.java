@@ -1,4 +1,4 @@
-package by.epam.task2.service;
+package by.epam.task2.service.impl;
 
 import by.epam.task2.entity.Point;
 import by.epam.task2.entity.Cube;
@@ -26,7 +26,7 @@ public class PointService {
 
     public List<Point> findVertexCube(Cube cube) {
         List<Point> vertexPoints = new ArrayList<>();
-        CubeService service = new CubeService();
+        CubeServiceImpl service = new CubeServiceImpl();
         double halfEdge = service.findCubeEdge(cube) / 2;
         Point centerPoint = findCenterPoint(cube);
 

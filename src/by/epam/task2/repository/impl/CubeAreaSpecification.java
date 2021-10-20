@@ -2,7 +2,7 @@ package by.epam.task2.repository.impl;
 
 import by.epam.task2.entity.Cube;
 import by.epam.task2.repository.Specification;
-import by.epam.task2.service.CubeService;
+import by.epam.task2.service.impl.CubeServiceImpl;
 
 public class CubeAreaSpecification implements Specification {
 
@@ -14,8 +14,8 @@ public class CubeAreaSpecification implements Specification {
 
     @Override
     public boolean specify(Cube cube) {
-        CubeService service = new CubeService();
-        double cubeArea = service.findCubeArea(cube);
-        return cubeArea == area;
+        CubeServiceImpl service = new CubeServiceImpl();
+        double cubeArea = service.findArea(cube);
+        return  Double.valueOf(cubeArea).equals(area);
     }
 }

@@ -1,11 +1,12 @@
-package by.epam.task2.service;
+package by.epam.task2.service.impl;
 
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
+import by.epam.task2.service.ShapeService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CubeService {
+public class CubeServiceImpl implements ShapeService {
     static Logger logger = LogManager.getLogger();
 
     public double findCubeDiagonal(Point firstPoint, Point secondPoint) {
@@ -35,36 +36,36 @@ public class CubeService {
         return edge;
     }
 
-    public double findCubeVolume(Point firstPoint, Point secondPoint) {
+    public double findVolume(Point firstPoint, Point secondPoint) {
         double edge = findCubeEdge(firstPoint, secondPoint);
         double v = Math.pow(edge, 3.0);
         return v;
     }
 
-    public double findCubeVolume(Cube cube) {
-        double volume = findCubeVolume(cube.getFirstPoint(), cube.getSecondPoint());
+    public double findVolume(Cube cube) {
+        double volume = findVolume(cube.getFirstPoint(), cube.getSecondPoint());
         return volume;
     }
 
-    public double findCubeArea(Point firstPoint, Point secondPoint) {
+    public double findArea(Point firstPoint, Point secondPoint) {
         double edge = findCubeEdge(firstPoint, secondPoint);
         double area = 6 * Math.pow(edge, 2.0);
         return area;
     }
 
-    public double findCubeArea(Cube cube) {
-        double area = findCubeArea(cube.getFirstPoint(), cube.getSecondPoint());
+    public double findArea(Cube cube) {
+        double area = findArea(cube.getFirstPoint(), cube.getSecondPoint());
         return area;
     }
 
-    public double findCubePerimeter(Point firstPoint, Point secondPoint) {
+    public double findPerimeter(Point firstPoint, Point secondPoint) {
         double edge = findCubeEdge(firstPoint, secondPoint);
         double perimeter = 12 * edge;
         return perimeter;
     }
 
-    public double findCubePerimeter(Cube cube) {
-        double perimeter = findCubePerimeter(cube.getFirstPoint(), cube.getSecondPoint());
+    public double findPerimeter(Cube cube) {
+        double perimeter = findPerimeter(cube.getFirstPoint(), cube.getSecondPoint());
         return perimeter;
     }
 
@@ -84,19 +85,47 @@ public class CubeService {
         return center;
     }
 
-    public boolean isCubeOnTheAxis(Cube cube) {
 
-        PointService service = new PointService();
-        Point centerPoint = service.findCenterPoint(cube);
-        double halfEdge = findCubeEdge(cube) / 2;
+    public boolean isShapeOnTheAxis(Cube cube)  {
+        Point centerPoint = findCenterPoint(cube);
+        double halfEdge = findCubeEdge(cube)/2;
         double x = centerPoint.getX();
         double y = centerPoint.getY();
         double z = centerPoint.getZ();
-        if (x - halfEdge == 0 || y - halfEdge == 0 || z - halfEdge == 0 ||
+        if (x - halfEdge == 0 || y - halfEdge == 0 || z - halfEdge == 0||
                 x + halfEdge == 0 || y + halfEdge == 0 || z + halfEdge == 0) {
             return true;
         }
         return false;
     }
 
-}
+
+    public double volumeRatio(Cube cube) {   //one parallel plane
+        Point firstPoint = cube.getFirstPoint();
+        Point secondPoint = cube.getSecondPoint();
+        double x1 = firstPoint.getX();
+        double y1 = firstPoint.getY();
+        double z1 = firstPoint.getZ();
+        double x2 = secondPoint.getX();
+        double y2 = secondPoint.getY();
+        double z2 = secondPoint.getZ();
+
+        if ((x1 > 0 & 0 > x2) || (x1 < 0 & 0 < x2)) {
+            double ratio = Math.abs(x1) / Math.abs(x2);
+            return ratio;
+        }
+        if ((y1 > 0 & 0 > y2) || (y1 < 0 & 0 < y2)) {
+            double ratio = Math.abs(y1) / Math.abs(y2);
+            return ratio;
+        }
+        if ((z1 > 0 & 0 > z2) || (z1 < 0 & 0 < z2)) {
+            double ratio = Math.abs(z1) / Math.abs(z2);
+            return ratio;
+        } else {
+            logger.info("Cube does not cross coordinate plane.");
+            return 0;
+
+        }
+
+
+    }}

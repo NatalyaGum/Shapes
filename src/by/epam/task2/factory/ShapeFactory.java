@@ -7,8 +7,8 @@ import by.epam.task2.exception.ShapeException;
 import java.util.List;
 
 public interface ShapeFactory {
-    List<Cube> createCubeListFromPoints(List<Point> points) throws ShapeException;
+    List<Cube> createShapeListFromPoints(List<Point> points) throws ShapeException;
 
-    Cube createCube(Point firstPoint, Point secondPoint) throws ShapeException;
+    Cube createShape(Point firstPoint, Point secondPoint) throws ShapeException;
 
 }
