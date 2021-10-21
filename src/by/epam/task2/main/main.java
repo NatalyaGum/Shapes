@@ -2,7 +2,7 @@ package by.epam.task2.main;
 
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
-import by.epam.task2.factory.impl.PointFactoryImpl;
+import by.epam.task2.factory.impl.PointFactory;
 import by.epam.task2.filler.WarehouseFiller;
 import by.epam.task2.observer.impl.CubeObserverImpl;
 import by.epam.task2.repository.impl.CubeRepository;
@@ -23,7 +23,7 @@ public class main {
 
         CustomReaderImpl reader = new CustomReaderImpl();
         ParserImpl parser = new ParserImpl();
-        PointFactoryImpl pointFactory= new PointFactoryImpl();
+        PointFactory pointFactory= new PointFactory();
         CubeFactory factory= new CubeFactory();
         CubeServiceImpl service= new CubeServiceImpl();
         CubeObserverImpl observer = new CubeObserverImpl();

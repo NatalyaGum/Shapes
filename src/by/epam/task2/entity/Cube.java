@@ -68,8 +68,8 @@ public class Cube implements Cloneable, Observable {
         }
         Cube cube = (Cube) o;
         return firstPoint.equals(cube.firstPoint) &&
-                secondPoint.equals(cube.secondPoint) &&
-                cubeId == cube.cubeId;
+                secondPoint.equals(cube.secondPoint); //&&
+               // cubeId == cube.cubeId;
 
     }
 

@@ -7,18 +7,13 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PointFactoryImpl {
+public class PointFactory {
     private static Logger logger = LogManager.getLogger();
 
-    public PointFactoryImpl() {
+    public PointFactory() {
 
     }
 
-    public Point createPoint(double x, double y, double z) {
-        Point point = new Point(x, y, z);
-        logger.info("Point created" + point);
-        return point;
-    }
 
     public List<Point> createPoint(List<Double> listOfDouble) {
         List<Point> points = new ArrayList<Point>();
