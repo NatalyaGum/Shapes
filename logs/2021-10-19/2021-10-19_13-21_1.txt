@@ -1,0 +1,9 @@
+2021-10-19 13:21:17 [main] [readFile] [26] ERROR epam.task2.reader.impl.CustomReaderImpl - resources/listOfDouble.txt - the file was not found, 
+java.io.FileNotFoundException: resources\listOfDouble.txt (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:216) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.io.FileReader.<init>(FileReader.java:120) ~[?:?]
+	at by.epam.task2.reader.impl.CustomReaderImpl.readFile(CustomReaderImpl.java:19) [Shapes/:?]
+	at by.epam.task2.main.main.main(main.java:37) [Shapes/:?]
+2021-10-19 13:21:17 [main] [main] [62] ERROR by.epam.task2.main.main - by.epam.task2.exception.ShapeException: resources/listOfDouble.txt - the file was not found, 

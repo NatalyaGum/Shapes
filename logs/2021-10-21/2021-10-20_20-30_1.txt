@@ -1,0 +1,2 @@
+2021-10-20 20:30:25 [main] [parseCoordinate] [28] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 
+2021-10-20 20:30:25 [main] [parseCoordinate] [28] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 1d, 12.1

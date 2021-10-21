@@ -1,0 +1,9 @@
+2021-10-19 13:24:59 [main] [parseCoordinate] [29] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: 1d, 12.1
+2021-10-19 13:24:59 [main] [parseCoordinate] [29] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: abc
+2021-10-19 13:24:59 [main] [parseCoordinate] [29] INFO  epam.task2.parser.impl.ParserImpl - Validaion was failed for: a, b
+2021-10-19 13:24:59 [main] [fillWarehouse] [38] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = cb2ba4a4-18ac-4278-a43b-580852412a60, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-19 13:24:59 [main] [parameterChanged] [23] INFO  epam.task2.observer.impl.CubeObserverImpl - Warehouse was updatedcubeId = cb2ba4a4-18ac-4278-a43b-580852412a60, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-19 13:24:59 [main] [fillWarehouse] [38] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = cb2ba4a4-18ac-4278-a43b-580852412a60, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-19 13:24:59 [main] [fillWarehouse] [38] INFO  by.epam.task2.filler.WarehouseFiller - Warehouse filled successfully. cubeId = cb2ba4a4-18ac-4278-a43b-580852412a60, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-19 13:24:59 [main] [main] [56] INFO  by.epam.task2.main.main - d 173.20508075688772; e 100.0;  v 1000000.0
+2021-10-19 13:24:59 [main] [main] [61] INFO  by.epam.task2.main.main - CubeRepository size - 1 ,[cubeId = cb2ba4a4-18ac-4278-a43b-580852412a60, first point: Point{50.0, 50.0, 50.0}, second point: Point{0.0, 0.0, 0.0}]

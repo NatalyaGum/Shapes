@@ -1,0 +1,3 @@
+2021-10-21 12:51:33 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = b67a6abb-9e88-49d2-b7ca-3183acf08523, first point: Point{100.0, 100.0, 100.0}, second point: Point{0.0, 0.0, 0.0}
+2021-10-21 12:51:33 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 12f6f47d-1bfb-4b8a-b7ce-149b45a3595d, first point: Point{1.0, 1.0, 10.0}, second point: Point{1.0, 1.0, -1.0}
+2021-10-21 12:51:33 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = bf277abc-8cd1-4725-b377-91484d13cec5, first point: Point{2.0, 3.0, 4.0}, second point: Point{2.0, 3.0, 0.1}
