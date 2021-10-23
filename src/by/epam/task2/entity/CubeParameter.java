@@ -1,9 +1,5 @@
 package by.epam.task2.entity;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.util.Objects;
 
 public class CubeParameter implements Cloneable {
 
@@ -48,7 +44,7 @@ public class CubeParameter implements Cloneable {
         return diagonal;
     }
 
-    public void setDiagonal(double volume) {
+    public void setDiagonal(double diagonal) {
         this.diagonal = diagonal;
     }
 

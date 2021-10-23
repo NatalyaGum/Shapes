@@ -23,24 +23,25 @@ public class CubeFactory implements ShapeFactory {
         Point secondPoint;
 
         for (int i = 0; i < points.size(); i += 2) {
-            if (validator.validatePoints(points.get(i),points.get(i + 1))) {
+
             firstPoint = points.get(i);
             secondPoint = points.get(i + 1);
             Cube cube = createShape(firstPoint, secondPoint);
             cubes.add(cube);
             cube.attach(observer);
-        }}
+        }
         return cubes;
     }
 
     public Cube createShape(Point firstPoint, Point secondPoint) throws ShapeException {
         CubeObserverImpl observer = new CubeObserverImpl();
         CubeValidator validator = new CubeValidator();
-        Cube cube=null;
-        if (validator.validatePoints(firstPoint,secondPoint)) {
-        cube = new Cube(firstPoint, secondPoint);
-        cube.attach(observer);
-        logger.info("Cube created" + cube);}
+        Cube cube = null;
+        if (validator.validatePoints(firstPoint, secondPoint)) {
+            cube = new Cube(firstPoint, secondPoint);
+            cube.attach(observer);
+            logger.info("Cube created" + cube);
+        }
         return cube;
     }
 

@@ -6,6 +6,7 @@ public class IdGenerator {
 
     private IdGenerator() {
     }
+
     public static String generateId() {
         return UUID.randomUUID().toString();
     }

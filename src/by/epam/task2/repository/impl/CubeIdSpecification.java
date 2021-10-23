@@ -14,6 +14,6 @@ public class CubeIdSpecification implements Specification {
     @Override
     public boolean specify(Cube cube) {
 
-        return 0==cube.getCubeId().compareTo(cubeId) ;
+        return 0 == cube.getCubeId().compareTo(cubeId);
     }
 }

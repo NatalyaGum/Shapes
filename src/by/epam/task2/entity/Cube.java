@@ -69,7 +69,7 @@ public class Cube implements Cloneable, Observable {
         Cube cube = (Cube) o;
         return firstPoint.equals(cube.firstPoint) &&
                 secondPoint.equals(cube.secondPoint); //&&
-               // cubeId == cube.cubeId;
+        // cubeId == cube.cubeId;
 
     }
 
@@ -104,11 +104,16 @@ public class Cube implements Cloneable, Observable {
 
     @Override
     public void notifyObservers() {
-            CubeEvent cubeEvent = new CubeEvent(this);
-            for (Observer observer : observers) {
-                observer.parameterChanged(cubeEvent);
+        CubeEvent cubeEvent = new CubeEvent(this);
+        for (Observer observer : observers) {
+            observer.parameterChanged(cubeEvent);
 
         }
 
+    }
+
+    // only for test
+    public void setCubeId(String cubeId) {
+        this.cubeId = cubeId;
     }
 }

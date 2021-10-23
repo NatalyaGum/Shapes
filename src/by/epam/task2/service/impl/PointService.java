@@ -2,7 +2,8 @@ package by.epam.task2.service.impl;
 
 import by.epam.task2.entity.Point;
 import by.epam.task2.entity.Cube;
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class PointService {
         List<Point> vertexPoints = new ArrayList<>();
         CubeServiceImpl service = new CubeServiceImpl();
         double halfEdge = service.findCubeEdge(cube) / 2;
+        halfEdge = BigDecimal.valueOf(halfEdge).setScale(2, RoundingMode.HALF_UP).doubleValue();
         Point centerPoint = findCenterPoint(cube);
 
         // 4 points below of center point

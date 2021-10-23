@@ -3,7 +3,6 @@ package by.epam.task2.factory.impl;
 import by.epam.task2.entity.Point;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.List;
 

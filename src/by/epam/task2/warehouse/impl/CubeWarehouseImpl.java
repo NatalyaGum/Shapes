@@ -13,7 +13,11 @@ import java.util.Map;
 public class CubeWarehouseImpl {
     static Logger logger = LogManager.getLogger();
     private static final CubeWarehouseImpl instanceWarehouse = new CubeWarehouseImpl();
-    private final Map<String, CubeParameter> cubeParameterMap = new HashMap<>();
+    private final Map<String, CubeParameter> cubeParameterMap;
+
+    private CubeWarehouseImpl() {
+        cubeParameterMap = new HashMap<String, CubeParameter>();
+    }
 
     public static CubeWarehouseImpl getInstanceWarehouse() {
         return instanceWarehouse;
@@ -31,10 +35,10 @@ public class CubeWarehouseImpl {
     public CubeParameter getParameter(String id) throws ShapeException {
         CubeParameter cubeParameter = instanceWarehouse.cubeParameterMap.get(id);
         if (cubeParameter == null) {
-            logger.error("wrong id. no such element in warehouse : ", id);
-            throw new ShapeException("wrong id. no such element in warehouse :" + id);
+            logger.error(" No such parameters in warehouse : ", id);
+            throw new ShapeException("No such parameters in warehouse  :" + id);
         }
-        return cubeParameter;
+        return cubeParameterMap.get(id);
     }
 
     public void updateParameter(String id, double newPerimeter, double newArea, double newVolume, double newDiagonal) throws ShapeException {
@@ -53,4 +57,14 @@ public class CubeWarehouseImpl {
         WarehouseFiller filler = new WarehouseFiller();
         filler.fillWarehouse(cube);
     }
+
+    public Map<String, CubeParameter> getWarehouse() {
+        return new HashMap<String, CubeParameter>(cubeParameterMap);
+    }
+
+    public CubeParameter remove(String id) {
+        return cubeParameterMap.remove(id);
+    }
+
+
 }

@@ -16,6 +16,6 @@ public class CubeAreaSpecification implements Specification {
     public boolean specify(Cube cube) {
         CubeServiceImpl service = new CubeServiceImpl();
         double cubeArea = service.findArea(cube);
-        return  Double.valueOf(cubeArea).equals(area);
+        return Double.valueOf(cubeArea).equals(area);
     }
 }

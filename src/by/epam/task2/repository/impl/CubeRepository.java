@@ -14,7 +14,7 @@ public class CubeRepository implements Repository {
     private static final CubeRepository instanceRepository = new CubeRepository();
     private final List<Cube> cubes;
 
-    private CubeRepository() {
+    CubeRepository() {
         cubes = new ArrayList<>();
     }
 
@@ -49,6 +49,7 @@ public class CubeRepository implements Repository {
     public boolean removeAll(List<Cube> listOfCube) {
         return cubes.removeAll(listOfCube);
     }
+
 
     @Override
     public void clear() {

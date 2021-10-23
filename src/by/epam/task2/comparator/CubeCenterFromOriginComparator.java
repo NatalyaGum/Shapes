@@ -3,7 +3,6 @@ package by.epam.task2.comparator;
 import by.epam.task2.entity.Cube;
 import by.epam.task2.entity.Point;
 import by.epam.task2.service.impl.CubeServiceImpl;
-
 import java.util.Comparator;
 
 //the center of the cube relative to the center of coordinates
@@ -18,7 +17,7 @@ public class CubeCenterFromOriginComparator implements Comparator<Cube> {
         double x2 = center2.getX();
         double y2 = center2.getY();
         double z2 = center2.getZ();
-        return (int) ((x1 + y1 + z1) - (x2 + y2 + z2));
+        return Double.compare((x1 + y1 + z1), (x2 + y2 + z2));
     }
 
 

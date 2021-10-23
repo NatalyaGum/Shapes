@@ -14,30 +14,29 @@ import static org.testng.Assert.*;
 
 public class CubeFactoryTest {
 
-        @Test
-        public void testCreateShapeListFromPoints() throws ShapeException
-        {
-            List<Point> points = new ArrayList<>();
-            points.add(new Point(1.0, 1.0, 10.0));
-            points.add(new Point(1.0, 1.0, -1.0));
-            points.add(new Point(2.0, 3.0, 4.0));
-            points.add(new Point(2.0, 3.0, 0.1));
+    @Test
+    public void testCreateShapeListFromPoints() throws ShapeException {
+        List<Point> points = new ArrayList<>();
+        points.add(new Point(1.0, 1.0, 10.0));
+        points.add(new Point(1.0, 1.0, -1.0));
+        points.add(new Point(2.0, 3.0, 4.0));
+        points.add(new Point(2.0, 3.0, 0.1));
 
-            List<Cube> expected = new ArrayList<Cube>();
-            expected.add(new Cube(new Point(1.0, 1.0, 10.0), new Point(1.0, 1.0, -1.0)));
-            expected.add(new Cube(new Point(2.0, 3.0, 4.0), new Point(2.0, 3.0, 0.1)));
+        List<Cube> expected = new ArrayList<Cube>();
+        expected.add(new Cube(new Point(1.0, 1.0, 10.0), new Point(1.0, 1.0, -1.0)));
+        expected.add(new Cube(new Point(2.0, 3.0, 4.0), new Point(2.0, 3.0, 0.1)));
 
-            CubeFactory factory= new CubeFactory();
-            List<Cube>actual=factory.createShapeListFromPoints(points);
-            Assert.assertEquals(actual, expected);
-        }
-
-        @Test(expectedExceptions = ShapeException.class, expectedExceptionsMessageRegExp = ".*Attempt to create cube with null/same arguments.*")
-        public void testCreateShape() throws ShapeException {
-            Point firstPoint=new Point(100,100,100);
-            Point secondPoint=new Point(100,100,100);
-            CubeFactory factory= new CubeFactory();
-            Cube actual= factory.createShape(firstPoint,secondPoint);
-
-        }
+        CubeFactory factory = new CubeFactory();
+        List<Cube> actual = factory.createShapeListFromPoints(points);
+        Assert.assertEquals(actual, expected);
     }
+
+    @Test(expectedExceptions = ShapeException.class, expectedExceptionsMessageRegExp = ".*Attempt to create cube with null/same arguments.*")
+    public void testCreateShape() throws ShapeException {
+        Point firstPoint = new Point(100, 100, 100);
+        Point secondPoint = new Point(100, 100, 100);
+        CubeFactory factory = new CubeFactory();
+        Cube actual = factory.createShape(firstPoint, secondPoint);
+
+    }
+}

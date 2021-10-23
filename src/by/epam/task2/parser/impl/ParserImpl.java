@@ -21,9 +21,10 @@ public class ParserImpl implements Parser {
             for (String line : linesFromFile) {
                 if (validator.validateCoordinate(line)) {
                     String[] pointsLine = line.split(REGEX_FOR_SPLIT);
-                    for (int i = 0; i < pointsLine.length; i ++) {
+                    for (int i = 0; i < pointsLine.length; i++) {
                         double x = Double.parseDouble(pointsLine[i]);
-                        points.add(x);}
+                        points.add(x);
+                    }
                 } else {
                     logger.info("Validaion was failed for: " + line);
                 }

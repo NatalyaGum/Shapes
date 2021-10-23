@@ -1,5 +1,1 @@
-2021-10-21 12:53:10 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = e577d38d-7310-42e5-b133-ef8e938961e4, first point: Point{100.0, 100.0, 100.0}, second point: Point{0.0, 0.0, 0.0}
-2021-10-21 12:53:24 [main] [validatePoints] [15] ERROR epam.task2.validator.impl.CubeValidator - Attempt to create cube with null/same arguments
-2021-10-21 12:53:35 [main] [validatePoints] [15] ERROR epam.task2.validator.impl.CubeValidator - Attempt to create cube with null/same arguments
-2021-10-21 12:53:35 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = cc928423-c244-49e1-ae83-a23ac34f9766, first point: Point{1.0, 1.0, 10.0}, second point: Point{1.0, 1.0, -1.0}
-2021-10-21 12:53:35 [main] [createShape] [43] INFO  epam.task2.factory.impl.CubeFactory - Cube createdcubeId = 5212aa40-651c-460c-99c2-26045690c893, first point: Point{2.0, 3.0, 4.0}, second point: Point{2.0, 3.0, 0.1}
+2021-10-23 14:57:00 [main] [validatePoints] [25] ERROR epam.task2.validator.impl.CubeValidator - Attempt to create cube with not suitable arguments
